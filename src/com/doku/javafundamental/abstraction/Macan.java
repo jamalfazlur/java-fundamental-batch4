@@ -13,4 +13,15 @@ public class Macan extends Hewan {
     void makan() {
         System.out.println("Nyaamm.. nyaamm.. nyaaamm...");
     }
+
+    @Override
+    void berjalan() {
+        //super.berjalan();
+        System.out.println("Macan berlari kaliii..");
+    }
+
+    @Override
+    public void bernafas() {
+
+    }
 }

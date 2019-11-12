@@ -35,6 +35,7 @@ public class Main {
         System.out.println("meow equals popo ? " + meow.equals(popo));
 
         System.out.println("------------------------");
+
         Object o = new Kucing(); // kucing adalah Object
         Hewan h = new Kucing(); // kucing adalah Hewan
         Kucing k = new Kucing(); // kucing adalah Kucing, pastinya :)
@@ -50,6 +51,20 @@ public class Main {
         kucingK.makan();
 
         Hewan harimau = new Hewan();
-        Kucing anggora = (Kucing) harimau; // compile OK tetapi runtime error ClassCastException
+        //Kucing anggora = (Kucing) harimau; // compile OK tetapi runtime error ClassCastException
+
+        Anjing anj = new Anjing();
+        Jerapah jerapah = new Jerapah();
+
+        ZooKeeper zooKeeper = new ZooKeeper();
+
+        zooKeeper.setHewan(k);
+        zooKeeper.kasihMakan();
+
+        zooKeeper.setHewan(anj);
+        zooKeeper.kasihMakan();
+
+        zooKeeper.setHewan(jerapah);
+        zooKeeper.kasihMakan();
     }
 }

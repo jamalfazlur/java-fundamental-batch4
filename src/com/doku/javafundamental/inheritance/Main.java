@@ -15,5 +15,9 @@ public class Main {
         System.out.println("Apakah kucing IS-A Hewan -> " + (kucing instanceof Hewan));
         System.out.println("Apakah kucing IS-A Kucing -> " + (kucing instanceof Kucing));
 
+        Anjing anjing = new Anjing();
+
+        System.out.println("Sama? " + kucing.equals(anjing));
+
     }
 }

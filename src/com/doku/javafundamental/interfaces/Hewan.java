@@ -7,11 +7,13 @@ public interface Hewan {
     // interface abstract method cannot have body
 
 
-    public static final String respirasi = "oksigen";
+    //static final String respirasi = "oksigen";
+
     //static final String respirasi = "oksigen";
     //final String respirasi = "oksigen";
     //String respirasi = "oksigen";
-    //String RESPIRASI = "oksigen";
 
-    public void makan();
+    String RESPIRASI = "oksigen";
+
+    void makan();
 }
